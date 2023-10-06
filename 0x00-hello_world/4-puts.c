@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  *  this program prints "Programming is like building a multilingual puzzle"
  *  main - print the string in the put function
 */
