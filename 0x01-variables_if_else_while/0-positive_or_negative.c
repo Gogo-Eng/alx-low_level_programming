@@ -3,11 +3,12 @@
 #include <time.h>
 
 /**
-* the main function is the Entry point
+* This program will assign a random number
+* to the variable n each time it is executed
 * Return (0)
 */
 
-int main(void)
+int main(void) /*the main function is the Entry point*/
 {
 	int n;
 
