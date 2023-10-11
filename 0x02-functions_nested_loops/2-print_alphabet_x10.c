@@ -11,9 +11,9 @@
 		char gogo;
 		int progress = 0;
 
-		while (progress <10)
+		while (progress < 10)
 		{
-			gogo ='a';
+			gogo = 'a';
 			while (gogo <= 'z')
 			{
 				_putchar(gogo);
