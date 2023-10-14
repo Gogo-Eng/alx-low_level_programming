@@ -18,18 +18,21 @@ int main(void)
 	{
 		if (j % 15 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (j % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else if (j % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
-		
-		printf("%d %c", j, ' ');
+		else
+		{
+			 printf("%d", j);
+		}
+		printf(" ");
 
 		j++;
 
