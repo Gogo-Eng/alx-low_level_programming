@@ -28,10 +28,8 @@ int main(void)
 		{
 			printf("Fizz ");
 		}
-		else
-		{
-			printf("%d %c", j, ' ');
-		}
+		
+		printf("%d %c", j, ' ');
 
 		j++;
 
