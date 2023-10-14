@@ -32,10 +32,12 @@ int main(void)
 		{
 			 printf("%d", j);
 		}
-		printf(" ");
-
+		if (j != 100)
+		{
+			printf(" ");
+		}
 		j++;
 
 	}
-	return (0);
+	 return (0);
 }
