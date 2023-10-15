@@ -17,8 +17,8 @@ void print_diagonal(int n)
 	q = 0;
 	while (q < n && n > 0)
 	{
-		w = 0;
-		while (w < q)
+		w = 1;
+		while (w <= q)
 		{
 			_putchar (' ');
 			w++;
