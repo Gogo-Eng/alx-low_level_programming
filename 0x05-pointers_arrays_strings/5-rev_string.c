@@ -17,17 +17,17 @@ void rev_string(char *s)
 	{
 		size++;
 	}
-	
-	
+
+
 	j = size - 1;
 
 	while (j > 0)
-	{	
+	{
 		printf("%c", s[j]);
 		j--;
 
 	}
 	printf("\n");
-	
-}
+
+i
 
