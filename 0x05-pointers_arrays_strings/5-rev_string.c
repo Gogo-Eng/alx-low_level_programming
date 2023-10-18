@@ -18,7 +18,8 @@ void rev_string(char *s)
 
 		size++;
 	}
-	if (size 
+	s[size] = '\0';
+
 	j = size - 1;
 	
 	while (j >= 0)
