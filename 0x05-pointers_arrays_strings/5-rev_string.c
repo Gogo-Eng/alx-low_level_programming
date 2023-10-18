@@ -15,16 +15,18 @@ void rev_string(char *s)
 	size = 0;
 	while (s[size])
 	{
+
 		size++;
 	}
-
+	if (size 
 	j = size - 1;
-
+	
 	while (j >= 0)
 	{
 		printf("%c", s[j]);
 		j--;
 
 	}
+	
 	printf("\n");
 }
