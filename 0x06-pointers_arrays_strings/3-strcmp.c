@@ -11,20 +11,12 @@
 int _strcmp(char *s1, char *s2)
 {
 	int i;
-	int y;
 	int r;
 
 	i = 0;
-	while (s1[i])
+	while (s1[i] && s2[i])
 	{
-		i++;
-	}
 
-	y = 0;
-	while (s2[y])
-	{
-		y++;
-	}
 	if (s1[0] == s2[0])
 	{
 		return (0);
@@ -33,6 +25,8 @@ int _strcmp(char *s1, char *s2)
 	{
 		r = s1[0] - s2[0];
 		return (r);
+	}
+		i++;
 	}
 	return (0);
 }
