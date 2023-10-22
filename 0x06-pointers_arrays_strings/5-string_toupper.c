@@ -7,7 +7,7 @@
  * Return: returns a string of characters
  */
 
-char *string_toupper(char *upper)  
+char *string_toupper(char *upper)
 {
 	int t;
 
@@ -15,12 +15,12 @@ char *string_toupper(char *upper)
 	while (upper[t])
 	{
 		t++;
-	
+
 		if (upper[t] >= 'a' && upper[t] <= 'z')
 		{
 			upper[t] -= 32;
 		}
 	}
 
-	 return (upper);
+	return (upper);
 }
