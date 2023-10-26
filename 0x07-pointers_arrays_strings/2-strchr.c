@@ -21,6 +21,11 @@ char *_strchr(char *s, char c)
 		}
 		y++;
 	}
+
+	if (s[y] == c)
+	{
+		return (s + y);
+	}
 	return (NULL);
 }
 
