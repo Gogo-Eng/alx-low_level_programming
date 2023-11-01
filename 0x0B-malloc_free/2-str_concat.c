@@ -30,6 +30,7 @@ char *str_concat(char *s1, char *s2)
 	strings = (char *)malloc((j + b + 1) * sizeof(char));
 	if (strings == NULL)
 	{
+		free(strings);
 		return (NULL);
 	}
 	for (l = 0; l < b; l++)
