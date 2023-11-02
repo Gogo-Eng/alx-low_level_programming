@@ -27,7 +27,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (y = 0; s1[y]; y++)
 
-	for (j = 0; s2[j]; j++)
+	for (j = 0; s2[j] && n > 0; j++)
 
 
 	str = (char *)malloc((y + j + 1) * sizeof(char));
