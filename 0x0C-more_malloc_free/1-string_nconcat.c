@@ -15,10 +15,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned int y, j, r, t, v;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
 	for (y = 0; s1[y]; y++)
 
 	for (j = 0; s2[j] && n > 0; j++)
