@@ -15,9 +15,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned int y, j, r, t, v;
 
-	for (y = 0; s1[y]; y++)
+	for (y = 0; s1 && s1[y]; y++)
 
-	for (j = 0; s2[j] && n > 0; j++)
+	for (j = 0; s2 && s2[j] && n > 0; j++)
 	if (n < j)
 	{
 		str = (char *)malloc((y + n + 1) * sizeof(char));
