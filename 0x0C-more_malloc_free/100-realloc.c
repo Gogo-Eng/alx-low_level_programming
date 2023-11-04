@@ -44,7 +44,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	else if (!ptr)
 	{
-		newPtr = malloc(new_size);
+		newPtr =(char *)malloc(sizeof(char) * new_size);
 		if (newPtr == NULL)
 		{
 			return (NULL);
@@ -58,7 +58,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	else
 	{
-		newPtr = malloc(new_size);
+		newPtr = (char *)malloc(sizeof(char) * new_size);
 		if (newPtr)
 		{
 			_memcpy(newPtr, ptr, old_size);
