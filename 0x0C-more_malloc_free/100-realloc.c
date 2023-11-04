@@ -53,7 +53,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		if (newPtr)
 		{
 			_memcpy(newPtr, ptr, old_size);
-			free(newPtr);
+			free(ptr);
 		}
 		return (newPtr);
 	}
