@@ -27,7 +27,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("nill");
+			printf("(nill)");
 		}
 
 		if (i < n - 1 && separator)
@@ -37,5 +37,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 
 	printf("\n");
-	va_end(pipe);
+	va_end(pipe)ì;
 }
