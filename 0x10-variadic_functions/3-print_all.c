@@ -23,17 +23,17 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 			character = va_arg(lot, int);
-			printf("%c ", character);
+			printf("%c, ", character);
 			break;
 
 			case 'i':
 			number = va_arg(lot, int);
-			printf("%d ", number);
+			printf("%d, ", number);
 			break;
 
 			case 'f':
 			num = va_arg(lot, double);
-			printf("%f ", num);
+			printf("%f, ", num);
 			break;
 
 			case 's':
