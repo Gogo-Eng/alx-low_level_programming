@@ -10,12 +10,11 @@
 
 void print_all(const char * const format, ...)
 {
-	unsigned int i, start = 0;
+	unsigned int i = 0, start = 0;
 	va_list lot;
 	char *str;
 
 	va_start(lot, format);
-	i = 0;
 	while (format[i])
 	{
 		switch (format[i])
@@ -47,8 +46,7 @@ void print_all(const char * const format, ...)
 				printf("%s", str);
 				start = 1;
 				break;
-		}
-		i++;
+		} i++;
 	}
 	va_end(lot);
 	printf("\n");
