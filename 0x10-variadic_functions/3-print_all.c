@@ -9,10 +9,9 @@
 
 void print_all(const char * const format, ...)
 {
-	char character;
+	char character, *str;
 	unsigned int i, number;
 	double num;
-	char *str;
 	va_list lot;
 
 	va_start(lot, format);
@@ -38,7 +37,8 @@ void print_all(const char * const format, ...)
 
 			case 's':
 			str = va_arg(lot, char*);
-			printf("%s", str);
+			if (str)
+       				printf("%s", str);
 			if (!str)
 				printf("(nil)");
 			break;
