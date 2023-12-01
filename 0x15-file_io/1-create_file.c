@@ -27,17 +27,12 @@ int create_file(const char *filename, char *text_content)
 	}
 
 
-		point = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+		point = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 		writing = write(point, text_content, strlen(text_content));
 
-		if (writing == -1)
+		if (point == -1 || writing == -1)
 		{
-			printf("unable to write to file");
-			return (-1);
-		}
-		if (point == -1)
-		{
-			printf("file can not open");
+
 			return (-1);
 		}
 
