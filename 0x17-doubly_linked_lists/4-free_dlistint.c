@@ -5,7 +5,7 @@
 /**
  * free_dlistint - free_dlistintfree_dlistint
  * @head: pointer to the first node
- * Return: 0
+ * Return: nothing
  */
 
 void free_dlistint(dlistint_t *head)
