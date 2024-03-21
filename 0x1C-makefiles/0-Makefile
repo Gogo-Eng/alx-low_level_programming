@@ -1,4 +1,4 @@
 #!/bin/bash
 
-all: main.c m.h school.c
-    gcc main.c school.c -o school
+all: main.c school.c m.h
+        gcc main.c school.c -o school
